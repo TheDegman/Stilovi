@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Shell xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Stilovi.Core.AppShell"
+             xmlns:stranice="clr-namespace:Stilovi.Stranice"
+             FlyoutHeaderBehavior="CollapseOnScroll"
+             FlyoutVerticalScrollMode="Enabled">
+    <FlyoutItem FlyoutDisplayOptions="AsMultipleItems">
+        <ShellContent Title="GPU"
+                      ContentTemplate="{DataTemplate stranice:GPU}"></ShellContent>        
+    </FlyoutItem>
+    <FlyoutItem FlyoutDisplayOptions="AsMultipleItems">
+        <ShellContent Title="CPU"
+                      ContentTemplate="{DataTemplate stranice:CPU}"></ShellContent>
+    </FlyoutItem>
+</Shell>

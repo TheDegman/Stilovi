@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Stilovi.Stranice.CPU">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style x:Key="layoutStyle" TargetType="AbsoluteLayout">
+                <Setter Property="BackgroundColor" Value="#191919"></Setter>
+            </Style>
+            <Style x:Key="naslovStyle" TargetType="Label">
+                <Setter Property="FontSize" Value="30"></Setter>
+                <Setter Property="TextColor" Value="White" ></Setter>
+                <Setter Property="AbsoluteLayout.LayoutFlags" Value="All"></Setter>
+                <Setter Property="AbsoluteLayout.LayoutBounds" Value="0.5,0,0.9,0.4"></Setter>
+                <Setter Property="HorizontalTextAlignment" Value="Center"></Setter>
+
+            </Style>
+            <Style x:Key="imgStyle" TargetType="Image">
+                <Setter Property="AbsoluteLayout.LayoutFlags" Value="All"></Setter>
+                <Setter Property="AbsoluteLayout.LayoutBounds" Value="0.5,0.5,0.5,0.5"></Setter>
+            </Style>
+            <Style x:Key="btnStyle" TargetType="Button">
+                <Setter Property="BackgroundColor" Value="White"></Setter>
+                <Setter Property="TextColor" Value="#191919"></Setter>
+                <Setter Property="FontSize" Value="30"></Setter>
+                <Setter Property="AbsoluteLayout.LayoutFlags" Value="All"></Setter>
+                <Setter Property="AbsoluteLayout.LayoutBounds" Value="0.5,0.85,0.3,0.1"></Setter>
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <AbsoluteLayout Style="{StaticResource layoutStyle}">
+            <Label Text="AMD Ryzen Threadripper 3970X 32-Core, 64-Thread Unlocked Desktop Processor" 
+                   Style="{StaticResource naslovStyle}"/>
+            <Image Source="AMD.png" Style="{StaticResource imgStyle}"></Image>
+            <Button Text="BUY" Style="{StaticResource btnStyle}"></Button>
+        </AbsoluteLayout>
+    </ContentPage.Content>
+</ContentPage>
